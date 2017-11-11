@@ -7,4 +7,9 @@ a.push('PHP', 'ABCD');
 // a.pop();
 // a.splice(1, 2);
 // a.splice(1, 0, 'PHP', 'Native');
-console.log(a);
+// console.log(a);
+Array.prototype.show = function() {
+    console.log('ValueP: ' + this);
+}
+
+a.show();
